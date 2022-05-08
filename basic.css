@@ -1,0 +1,27 @@
+.basic .triangleJaune {
+    transform: translate(0, 0);
+}
+
+.basic .triangleOrange {
+    transform: translate(54px, -52px) rotate(90deg);
+}
+
+.basic .triangleViolet {
+    transform: translate(79px, 79px) rotate(270deg);
+}
+
+.basic .triangleRose {
+    transform: translate(160px, -2px) rotate(180deg);
+}
+
+.basic .triangleBleu {
+    transform: translate(150px, 109px) rotate(45deg);
+}
+
+.basic .carre {
+    transform: translate(122px, 66px) rotate(45deg);
+}
+
+.basic .parallelogramme {
+    transform: translate(45px, 146px) rotate(-45deg) skew(45deg);
+}

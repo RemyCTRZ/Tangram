@@ -1,0 +1,32 @@
+.camel {
+    padding: 25px 0 0 40px;
+}
+
+.camel .triangleJaune {
+    transform: translate(130px, 154px) rotate(0deg);
+}
+
+.camel .triangleOrange {
+    transform: translate(239px, 137px) rotate(-45deg);
+}
+
+.camel .triangleViolet {
+    transform: translate(50px, 20px) rotate(90deg);
+}
+
+.camel .triangleRose {
+    transform: translate(77px, 48px) rotate(180deg);
+}
+
+.camel .triangleBleu {
+    transform: translate(219px, 93px) rotate(-90deg);
+}
+
+.camel .carre {
+    transform: translate(144px, 113px) rotate(45deg);
+}
+
+.camel .parallelogramme {
+    transform: translate(68px, 143px) rotate(45deg) skew(45deg);
+    width: 69px;
+}

@@ -1,0 +1,31 @@
+.dog {
+    padding: 0;
+}
+
+.dog .triangleJaune {
+    transform: translate(178px, 107px) rotate(90deg);
+}
+
+.dog .triangleOrange {
+    transform: translate(287px, 123px) rotate(45deg);
+}
+
+.dog .triangleViolet {
+    transform: translate(375px, 240px) rotate(0deg);
+}
+
+.dog .triangleRose {
+    transform: translate(102px, 32px) rotate(-90deg);
+}
+
+.dog .triangleBleu {
+    transform: translate(115px, 164px) rotate(135deg);
+}
+
+.dog .carre {
+    transform: translate(40px, 123px) rotate(45deg);
+}
+
+.dog .parallelogramme {
+    transform: translate(89px, 262px) rotate(0deg) skew(-45deg);
+}

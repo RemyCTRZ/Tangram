@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background-color: rgb(235 220 191);
+}
+
+body {
+    color: #444;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.tangramContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 700px;
+    background-color: #f0e7df;
+    position: relative;
+    outline: solid 3px #fff;
+}
+
+.tangramButton {
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f0e7df;
+    outline: solid 3px #fff;
+}
+
+.tangramMain {
+    box-sizing: border-box;
+    padding: 125px 0 0 125px;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 150px;
+    left: 125px;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.buttons {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked+label,
+label:hover {
+    background-color: rgba(240, 231, 223, 0.3);
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    line-height: 12px;
+    font-size: 1em;
+    color: #444;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+input[type="radio"]:checked+label span,
+label:hover span {
+    bottom: 12px;
+    text-align: center;
+    font-weight: 500;
+    color: #666;
+    position: absolute;
+    width: 100%;
+}
+
+label {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    border: 0;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    float: left;
+    position: relative;
+}
+
+.tangramButton.smallBasic {
+    background-image: url(img/carre.png);
+}
+
+.tangramButton.smallCat {
+    background-image: url(img/chat.png);
+}
+
+.tangramButton.smallSwan {
+    background-image: url(img/cygne.png);
+}
+
+.tangramButton.smallDog {
+    background-image: url(img/chien.png);
+}
+
+.tangramButton.smallBear {
+    background-image: url(img/ours.png);
+}
+
+.tangramButton.smallFish {
+    background-image: url(img/poisson.png);
+}
+
+.tangramButton.smallCamel {
+    background-image: url(img/chameau.png);
+}
+
+.nightModeButton {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #333
+}
+
+/* --------------------------------------------------------------------Formes-------------------------------------------------------------------- */
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    transition: all 2s;
+}
+
+.triangleJaune {
+    border-left: 100px solid #FBC002;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+
+.triangleOrange {
+    border-left: 100px solid #F48400;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+}
+
+.triangleViolet {
+    border-left: 50px solid #7e2b7c;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.triangleRose {
+    border-left: 50px solid #d2696a;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.triangleBleu {
+    border-left: 70px solid #189184;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+}
+
+.carre {
+    position: absolute;
+    transition: all 2s;
+}
+
+.carreRouge {
+    background-color: #b20000;
+    width: 70px;
+    height: 70px;
+}
+
+.parallelogramme {
+    position: absolute;
+    transition: all 2s;
+}
+
+.parallelogrammeVert {
+    background-color: #81b442;
+    width: 64px;
+    height: 70px;
+}
+
+.night_mode {
+    position: absolute;
+    display: fixed;
+    top: 10px;
+    right: 0;
+}
+
+/* --------------------------------------------------------------------Responsive-------------------------------------------------------------------- */
+
+@media screen and (max-width:735px) {
+
+    .night_mode {
+        right: 10px;
+    }
+
+    #tangramMain {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 65px;
+        transform: scale(0.8);
+        padding: 0;
+    }
+
+    .tangramContainer {
+        justify-content: center;
+    }
+
+    .buttons {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    header {
+        position: unset;
+        text-align: center;
+    }
+
+    .container {
+        display: unset;
+        width: 100%;
+    }
+
+    #tangramMain.tangramMain.cat {
+        left:25px;
+    }
+
+    #tangramMain.tangramMain.dog {
+        left:-25px;
+    }
+
+    #tangramMain.tangramMain.bear {
+        left:-25px;
+    }
+
+    #tangramMain.tangramMain.fish {
+        left:0;
+    }
+
+    #tangramMain.tangramMain.camel {
+        left:0;
+    }
+}

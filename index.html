@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="cat.css">
+    <link rel="stylesheet" href="dog.css">
+    <link rel="stylesheet" href="swan.css">
+    <link rel="stylesheet" href="camel.css">
+    <link rel="stylesheet" href="fish.css">
+    <link rel="stylesheet" href="bear.css">
+    <link rel="stylesheet" href="night_mode.css">
+    <script src="https://kit.fontawesome.com/b0162d0160.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Tangram - Rémy</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="tangramTitre">Tangram</h1>
+            <p>Cliquez sur la figure voulue et regardez-la prendre forme !</p>
+            <div class="night_mode">
+                <button class="nightModeButton" onclick="nightMode()">
+                    <i id="icon_night_mode" class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </header>
+        <section class="tangramContainer">
+            <div class="tangramButton smallBasic">
+                <div class="tangram"></div>
+            </div>
+            <div class="tangramButton smallCat">
+                <div class="tangram smallSwan"></div>
+            </div>
+            <div class="tangramButton smallSwan">
+                <div class="tangram"></div>
+            </div>
+            <div class="tangramButton smallDog">
+                <div class="tangram"></div>
+            </div>
+            <div class="tangramButton smallBear">
+                <div class="tangram"></div>
+            </div>
+            <div class="tangramButton smallFish">
+                <div class="tangram"></div>
+            </div>
+            <div class="tangramButton smallCamel">
+                <div class="tangram"></div>
+            </div>
+            <form class="buttons">
+                <input type="radio" name="tangramButtons" id="basic" class="button_basic" checked
+                    onclick="formeSwitch('basic')">
+                <label for="basic">
+                    <span>Carré</span>
+                </label>
+                <input type="radio" name="tangramButtons" id="cat" class="button_cat" onclick="formeSwitch('cat')">
+                <label for="cat">
+                    <span>Chat</span>
+                </label>
+                <input type="radio" name="tangramButtons" id="swan" class="button_swan" onclick="formeSwitch('swan')">
+                <label for="swan">
+                    <span>Cygne</span>
+                </label>
+                <input type="radio" name="tangramButtons" id="dog" class="button_dog" onclick="formeSwitch('dog')">
+                <label for="dog">
+                    <span>Chien</span>
+                </label>
+                <input type="radio" name="tangramButtons" id="bear" class="button_bear" onclick="formeSwitch('bear')">
+                <label for="bear">
+                    <span>Ours</span>
+                </label>
+                <input type="radio" name="tangramButtons" id="fish" class="button_fish" onclick="formeSwitch('fish')">
+                <label for="fish">
+                    <span>Poisson</span>
+                </label>
+                <input type="radio" name="tangramButtons" id="camel" class="button_camel"
+                    onclick="formeSwitch('camel')">
+                <label for="camel">
+                    <span>Chameau</span>
+                </label>
+            </form>
+            <div class="tangramMain basic" id="tangramMain">
+                <div class="triangle triangleJaune"></div>
+                <div class="triangle triangleOrange"></div>
+                <div class="triangle triangleViolet"></div>
+                <div class="triangle triangleRose"></div>
+                <div class="triangle triangleBleu"></div>
+                <div class="carre carreRouge"></div>
+                <div class="parallelogramme parallelogrammeVert"></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

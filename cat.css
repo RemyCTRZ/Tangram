@@ -1,0 +1,32 @@
+.cat
+{
+    padding: 30px 0 0 75px;
+}
+
+.cat .triangleJaune {
+    transform: translate(85px, 132px);
+}
+
+.cat .triangleOrange {
+    transform: translate(100px, 245px) rotate(45deg);
+}
+
+.cat .triangleViolet {
+    transform: translate(52px, 0) rotate(180deg);
+}
+
+.cat .triangleRose {
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+.cat .triangleBleu {
+    transform: translate(10px, 132px) rotate(180deg);
+}
+
+.cat .carre {
+    transform: translate(16px, 70px) rotate(45deg);
+}
+
+.cat .parallelogramme {
+    transform: translate(222px, 310px) skew(-45deg);
+}

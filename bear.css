@@ -1,0 +1,31 @@
+.bear {
+    padding: 0;
+}
+
+.bear .triangleJaune {
+    transform: translate(330px, 118px) rotate(0deg);
+}
+
+.bear .triangleOrange {
+    transform: translate(241px, 55px) rotate(-45deg);
+}
+
+.bear .triangleViolet {
+    transform: translate(340px, 274px) rotate(45deg);
+}
+
+.bear .triangleRose {
+    transform: translate(59px, 122px) rotate(45deg);
+}
+
+.bear .triangleBleu {
+    transform: translate(170px, 124px) rotate(135deg);
+}
+
+.bear .carre {
+    transform: translate(106px, 120px) rotate(0deg);
+}
+
+.bear .parallelogramme {
+    transform: translate(145px, 222px) skew(-45deg);
+}

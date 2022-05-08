@@ -1,0 +1,31 @@
+.swan
+{
+    padding: 55px 0 0 110px;
+}
+
+.swan .triangleJaune {
+    transform: translate(57px, 194px) rotate(135deg);
+}
+
+.swan .triangleOrange {
+    transform: translate(127px, 136px) rotate(90deg);
+}
+
+.swan .triangleViolet {
+    transform: translate(3px, 4px) rotate(45deg);
+}
+
+.swan .triangleRose {
+    transform: translate(-6px, 155px) rotate(0deg);
+}
+
+.swan .triangleBleu {
+    transform: translate(-3px, 189px) rotate(180deg);
+}
+
+.swan .carre {
+    transform: translate(12px, 116px) rotate(45deg);
+}
+.swan .parallelogramme {
+    transform: translate(42px, 38px) rotate(45deg) skew(45deg);
+}

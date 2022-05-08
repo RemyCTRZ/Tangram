@@ -1,0 +1,31 @@
+.fish {
+    padding: 0 0 0 50px;
+}
+
+.fish .triangleJaune {
+    transform: translate(80px, 86px) rotate(45deg);
+}
+
+.fish .triangleOrange {
+    transform: translate(80px, 160px) rotate(-45deg);
+}
+
+.fish .triangleViolet {
+    transform: translate(162px, 231px) rotate(225deg);
+}
+
+.fish .triangleRose {
+    transform: translate(162px, 119px) rotate(135deg);
+}
+
+.fish .triangleBleu {
+    transform: translate(244px, 192px) rotate(180deg);
+}
+
+.fish .carre {
+    transform: translate(169px, 190px) rotate(0deg);
+}
+
+.fish .parallelogramme {
+    transform: translate(246px, 155px) rotate(90deg) skew(45deg);
+}
